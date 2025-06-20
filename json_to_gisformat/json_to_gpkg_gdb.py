@@ -49,7 +49,7 @@ for i,laag in enumerate(out_format["lagen"]):
             'snelheidsregimes_wrapp',
             'staatvandewegmetingen_V2',
             'wegenregister',
-    ):
+    ):#e
         logging.info("laag niet in lijst")
         continue
 
