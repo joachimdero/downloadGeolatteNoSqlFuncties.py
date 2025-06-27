@@ -1,0 +1,1618 @@
+{
+  "lagen": {
+    "afgeleide_tonnage_voorwaarden": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "wegsegmentId": {
+          "veldtype": "int32"
+        },
+        "wegnummer": {
+          "veldtype": "str",
+          "veldlengte": 8,
+          "source": "ident8"
+        },
+        "tonnage": {
+          "veldtype": "decimal"
+        },
+        "copydatum": {
+          "veldtype": "date"
+        }
+      }
+    },
+    "afgeleide_zones": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "wegsegmentId": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "ident8": {
+          "veldtype": "str",
+          "veldlengte": 8
+        },
+        "zonesnelheid": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "zone.snelheid"
+        },
+        "zonebordType": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "zone.bordType"
+        }
+      }
+    },
+    "afgeleide_snelheidsregimes_wegsegment_bord": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "wegsegmentId": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "ident8": {
+          "veldtype": "str",
+          "veldlengte": 8
+        },
+        "snelheid": {
+          "veldtype": "stintr",
+          "veldlengte": null
+        },
+        "autosnelweg": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "gescheidenrijbaan": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "bepalendBordCode": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "bepalendBordOpstellingBeheerder": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "bepalendBordOpstellingId": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "bepalendBordOpstellingUUID": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "vorigeWegsegmentId": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "vorigeWegsegmentIdPopup": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "afgeleide_tonnage": {
+      "velden": {
+        "id": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "wegsegmentId": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "ident8": {
+          "veldtype": "str",
+          "veldlengte": 8
+        },
+        "tonnage": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "bebouwdekommen_wrapp": {
+      "velden": {
+        "locatie_wsoidn": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_m": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_tot_m": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_wegnummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_van_afstand": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_tot_refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_tot_afstand": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "naam": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "aangepastDoor": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "opnamedatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "laatsteWijziging": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "notitie": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "fietspaden_wrapp": {
+      "velden": {
+        "locatie_wsoidn": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_m": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "locatie_tot_m": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "locatie_wegnummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_van_afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "locatie_tot_refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_tot_afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "zijdeRijbaan": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "fietsrichting": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "typeFietspad": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "verkeersbord": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "breedte": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "afstandRijbaan": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "boordsteen": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "typeTussenstrook": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "markering": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "kleur": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "wegverharding": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "aangepastDoor": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "opnamedatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "laatsteWijziging": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "notitie": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "fietssuggestiestroken_wrapp": {
+      "velden": {
+        "locatie_wsoidn": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_m": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "locatie_tot_m": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "locatie_wegnummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_van_afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "locatie_tot_refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_tot_afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "zijdeRijbaan": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "breedte": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "kleur": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "aangepastDoor": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "opnamedatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "laatsteWijziging": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "notitie": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "innames": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "werfid": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "wegnummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "ident8": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "van_referentiepaal": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "van_afstand": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "tot_referentiepaal": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "tot_afstand": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "fase": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "type_locatie": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "type_werf": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "gipodid": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "vandatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "totdatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "uitvoerperiode_van_jaar": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "uitvoerperiode_van_maand": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "uitvoerperiode_tot_jaar": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "uitvoerperiode_tot_maand": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "besteknummers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "dossiernummers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "uitvoertermijn": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "historianummers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "planningsstatus": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "werfomschrijving": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "milderendemaatregelen": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "administratief_opvolgers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "opdrachtgevende_afdeling": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "isOpRouteUitzonderlijkVervoer": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "gewijzigd_op": {
+            "veldtype": "str",
+            "veldlengte": null
+          }
+        }
+      }
+    },
+    "knelpunten_locaties": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "wegnummer": {
+          "veldtype": "str",
+          "veldlengte": 8
+        },
+        "refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "vanRefpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "vanAfstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "totRefpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "totAfstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "status": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "hoofdthema": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "subthema": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "weginfrastructuur": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "omschrijving": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "afdeling": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "districten": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "provincies": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "gemeenten": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "straatnamen": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "vervoerregios": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "politiezones": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "eigenaar": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "nummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "ingreepNummers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "vriNummers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "labels": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "datumOntvangstAanvraag": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "knelpuntHref": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "lzv_trajecten_wrapp": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "locatie_wegnummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_refpunt": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_afstand": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_tot_refpunt": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_tot_afstand": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_wsoidn": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_m": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_tot_m": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "netwerk": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "periode": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "gepubliceerdOpenData": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "statusLZVperiode": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "opmerkingenLZV": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "notitie": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "aangepastDoor": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "laatsteWijziging": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "emonderdelen": {
+      "velden": {
+        "ident8": {
+          "veldtype": "str",
+          "veldlengte": 8
+        },
+        "opschrift": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "site": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "status": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "installatieNaampad": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "rootPad": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "typeNaam": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "typeOmschrijving": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "naam": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "toezichter": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "toezichterNaam": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "toezichterEmail": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "beheerderBhRef": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "besteknummers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "toezichterGroepNaam": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "laatsteUpdate": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "updateUserRef": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "bronid": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "commentaar": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "fastpercelenplus35t_wrapp": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "locatie_wegnummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_refpunt": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_afstand": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_tot_refpunt": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_tot_afstand": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_wsoidn": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_m": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_tot_m": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "takelaar": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "aantalSignas": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "oudPerceel": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "startDatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "eindDatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "perceel": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "verantwoordelijkAmbtenaar": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "notitie": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "aangepastDoor": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "laatsteWijziging": {
+          "veldtype": "date",
+          "veldlengte": null
+        }
+      }
+    },
+    "referentiepunten": {
+      "velden": {
+        "wegnummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "opschrift": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "bijkomendewegnummers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "materiaalPaal": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "gebruiker": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "begindatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "opnamedatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "creatiedatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "wijzigingsdatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "opmerking": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "snelheidsregimes_wrapp": {
+      "velden": {
+        "locatie_wsoidn": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_m": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_tot_m": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_wegnummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "locatie_van_refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_van_afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "locatie_tot_refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "locatie_tot_afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "snelheidsbeperking": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "variabelbord": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "aangepastDoor": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "opnamedatum": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "laatsteWijziging": {
+          "veldtype": "date",
+          "veldlengte": null
+        },
+        "notitie": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "id": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "ingrepen": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "wegnummer": {
+          "veldtype": "str",
+          "veldlengte": 8
+        },
+        "refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "vanRefpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "vanAfstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "totRefpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "totAfstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "straatnamen": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "status": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "categorieen": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "soortIngreep": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "titel": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "omschrijving": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "betrokkenen": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "afdeling": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "districten": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "vervoerregios": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "trekker": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "gemeenten": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "eigenaar": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "geschatteStartWerken": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "nummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "ingreepHref": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "geraamdBedrag": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "knelpuntNummers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "aidNummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "projectcenter": {
+      "velden": {
+        "wegnummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "vanRef": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "totRef": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "wegnummer2": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "vanRef2": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "totRef2": {
+          "veldtype": "decimal",
+          "veldlengte": null
+        },
+        "projectKey": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "url": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "projectNaam": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "projectFasen": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "status": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "afdeling": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "beschrijving": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "historiaProjectFases": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "dossierNummers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "bestekNummers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "projectManagers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "regioManagers": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "werfleiders": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "communicatieVerantwoordelijken": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "gemeenten": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "vervoerRegios": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "startnota": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "projectnota": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "goedkeuringGrup": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "goedkeuringOmgevingsvergunning": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "onteigeningenAfgerond": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "startWerken": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "eindeWerken": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "voorlopigeOplevering": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "definitieveOplevering": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "staatvandewegmetingen_V2": {
+      "velden": {
+        "wegnummer": {
+          "veldtype": "str",
+          "veldlengte": 8,
+          "source": "ident8"
+        },
+        "locatie_van_refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null,
+          "source": "locatie.punten.0.relatief.referentiepunt.opschrift"
+        },
+        "locatie_van_afstand": {
+          "veldtype": "int32",
+          "veldlengte": null,
+          "source": "locatie.punten.0.relatief.afstand"
+        },
+        "locatie_tot_refpunt": {
+          "veldtype": "decimal",
+          "veldlengte": null,
+          "source": "locatie.punten.-1.relatief.referentiepunt.opschrift"
+        },
+        "locatie_tot_afstand": {
+          "veldtype": "int32",
+          "veldlengte": null,
+          "source": "locatie.punten.-1.relatief.afstand"
+        },
+        "rijstrook": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "typeMeting": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "wegaanhorigheid": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "tijdstip": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "jaar": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "spoorvorming_diepte": {
+          "veldtype": "decimal",
+          "veldlengte": null,
+          "source": "spoorvorming.spoorDiepte"
+        },
+        "spoorvorming_index": {
+          "veldtype": "decimal",
+          "veldlengte": null,
+          "source": "spoorvorming.spoorvormingIndex"
+        },
+        "spoorvorming_klasse": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "spoorvorming.spoorvormingKlasse"
+        },
+        "trapvorming_hoogte": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "trapvorming.trapHoogte"
+        },
+        "trapvorming_trapvormingIndex": {
+          "veldtype": "decimal",
+          "veldlengte": null,
+          "source": "trapvorming.trapvormingIndex"
+        },
+        "trapvorming_klasse": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "trapvorming.trapvormingKlasse"
+        },
+        "stroefheid_dwc": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "stroefheid.dwc"
+        },
+        "stroefheid_index": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "stroefheid.stroefheidIndex"
+        },
+        "stroefheid_klasse": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "stroefheid.stroefheidKlasse"
+        },
+        "visuele_insp_percBesch": {
+          "veldtype": "decimal",
+          "veldlengte": null,
+          "source": "visuele_inspectie.percentBeschadigd"
+        },
+        "visuele_insp_Index": {
+          "veldtype": "decimal",
+          "veldlengte": null,
+          "source": "visuele_inspectie.visueleInspectieIndex"
+        },
+        "visuele_inspectie_klasse": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "visuele_inspectie.visueleInspectieKlasse"
+        },
+        "langsvlakheid_linksVC02": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "langsvlakheid.linksVC02"
+        },
+        "langsvlakheid_linksVC10": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "langsvlakheid.linksVC10"
+        },
+        "langsvlakheid_linksVC40": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "langsvlakheid.linksVC40"
+        },
+        "langsvlakheid_rechtsVC02": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "langsvlakheid.rechtsVC02"
+        },
+        "langsvlakheid_rechtsVC10": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "langsvlakheid.rechtsVC10"
+        },
+        "langsvlakheid_rechtsVC40": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "langsvlakheid.rechtsVC40"
+        },
+        "langsvlakheid_samengesteldeVC": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "langsvlakheid.samengesteldeVC"
+        },
+        "langsvlakheid_index": {
+          "veldtype": "decimal",
+          "veldlengte": null,
+          "source": "langsvlakheid.langsvlakheidIndex"
+        },
+        "langsvlakheid_klasse": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "langsvlakheid.langsvlakheidKlasse"
+        },
+        "globale_index": {
+          "veldtype": "decimal",
+          "veldlengte": null,
+          "source": "globale_index.globaleIndex"
+        },
+        "globale_klasse": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "globale_index.globaleKlasse"
+        },
+        "globale_structuurKlasse": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "globale_index.structuurKlasse"
+        },
+        "globale_veiligheidKlasse": {
+          "veldtype": "str",
+          "veldlengte": null,
+          "source": "globale_index.veiligheidKlasse"
+        },
+        "verharding": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "wegenregister": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "id": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "status": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "lblstatus": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "morf": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "lblmorf": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "wegcat": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "lblwegcat": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "lstrnmid": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "lstrnm": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "rstrnmid": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "rstrnm": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "beheer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "lblbeheer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "methode": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "lblmethod": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "tgbep": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "lbltgbep": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "richting": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "ident8": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "ident8en": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "ident7": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "ident2": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "tweemaaltweerijstroken": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "doorsteek": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "eunummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "lbl_eu": {
+          "veldtype": "str",
+          "veldlengte": null
+        }
+      }
+    },
+    "genummerd_wegenregister": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "id": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "bron": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "status": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "lblstatus": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "morf": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "lblmorf": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "wegcat": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "lblwegcat": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "lstrnmid": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "lstrnm": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "rstrnmid": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "rstrnm": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "beheer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "lblbeheer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "methode": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "lblmethod": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "tgbep": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "lbltgbep": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "richting": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "ident8": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "ident8en": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "ident7": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "ident2": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "tweemaaltweerijstroken": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "doorsteek": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "eunummer": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "lbl_eu": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "b_wk_oidn": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "e_wk_oidn": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "locatie_van_refpunt": {
+          "veldtype": "decimaal",
+          "veldlengte": null
+        },
+        "locatie_van_afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        },
+        "locatie_tot_refpunt": {
+          "veldtype": "decimaal",
+          "veldlengte": null
+        },
+        "locatie_tot_afstand": {
+          "veldtype": "int32",
+          "veldlengte": null
+        }
+      }
+    },
+    "UitzonderlijkVervoerNetwerk": {
+      "geometry_type": "MULTILINESTRING",
+      "velden": {
+        "UV108Ton_B": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UV108Ton_N": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UV108Ton_O": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UV120Ton_B": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UV120Ton_N": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UV120Ton_O": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UV90Ton_Be": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UV90Ton_Ne": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UV90Ton_Op": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UVsnelwe_1": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UVsnelwe_2": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "UVsnelwege": {
+          "veldtype": "str",
+          "veldlengte": null
+        },
+        "WS_OIDN": {
+          "veldtype": "int32",
+          "veldlengte": null
+        }
+      }
+    }
+  }
+}
+
